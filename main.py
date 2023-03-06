@@ -1,18 +1,15 @@
-from trade_client import *
-from store_order import *
-from logger import logger
-from load_config import *
-from new_listings_scraper import *
-import globals
-from collections import defaultdict
-from datetime import datetime, time
-import time
-import threading
 import copy
-import json
-from json import JSONEncoder
+import os
 import os.path
-import sys, os
+import threading
+from datetime import datetime, time
+
+import globals
+from load_config import *
+from logger import logger
+from new_listings_scraper import *
+from store_order import *
+from trade_client import *
 
 # To add a coin to ignore, add it to the json array in old_coins.json
 globals.old_coins = load_old_coins()
